@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+/*    box-sizing: border-box;*/
     font-family: 'Segoe UI', sans-serif;
 }
 
 body {
     background-color: #f5f7fa;
+    width: 100%;
 }
 
 .destination-section {
@@ -44,16 +45,16 @@ body {
     cursor: pointer;
 }
 
-    .card img {
+.card img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: transform 0.5s;
-    }
+}
 
-    .card:hover img {
+.card:hover img {
         transform: scale(1.1);
-    }
+ }
 
 .overlay {
     position: absolute;
@@ -77,21 +78,53 @@ body {
 /* WHY CHOOSE US SECTION */
 .why-choose-us {
     background-color: #f9fbfd;
+    padding: 60px 0; /* Adds breathing room top and bottom */
+    /* These 4 lines force the background to be full-width */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .why-card {
+    background: #ffffff; /* solid white card to pop against the off-white background */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* very subtle dark border */
+    border-radius: 20px;
     padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* adds a premium feel */
 }
 
+    .why-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.05);
+    }
 .why-img {
     width: 80px;
     height: 80px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the icons circular and less boxy */
+    margin-bottom: 15px;
 }
 
 .why-card p {
     font-size: 14px;
     color: #666;
     margin-top: 10px;
+}
+
+.why-choose-us h2 {
+    color: #333;
+}
+
+.why-card h5 {
+    color: #222;
+}
+
+.why-card p {
+    color: #666;
+    font-size: 0.95rem;
 }
  
