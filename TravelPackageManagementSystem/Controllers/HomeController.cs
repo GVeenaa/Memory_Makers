@@ -27,6 +27,7 @@ namespace TravelPackageManagementSystem.Controllers
             return View();
         }
 
+        public IActionResult Host()
         public IActionResult PaymentPage()
         {
             return View();
