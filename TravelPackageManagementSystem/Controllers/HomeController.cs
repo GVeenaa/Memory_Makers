@@ -27,8 +27,27 @@ namespace TravelPackageManagementSystem.Controllers
             return View();
         }
 
-        public IActionResult Host()
         public IActionResult PaymentPage()
+        {
+            return View();
+        }
+
+        public IActionResult Host()
+        {
+            return View();
+        }
+
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+        public IActionResult TravelGuide()
+        {
+            return View();
+        }
+
+        public IActionResult CustomerSupport ()
         {
             return View();
         }
