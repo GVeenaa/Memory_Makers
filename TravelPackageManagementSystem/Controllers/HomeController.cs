@@ -25,6 +25,23 @@ namespace TravelPackageManagementSystem.Controllers
         public IActionResult Hero()
         {
             return View();
+        }   
+
+        public IActionResult Coorg()
+        {
+            return View();
+        }
+        public IActionResult Vrindavan()
+        {
+            return View();
+        }
+        public IActionResult Rameshwaram()
+        {
+            return View();
+        }
+        public IActionResult Darjiling()
+        {
+            return View();
         }
         
 
